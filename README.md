@@ -12,7 +12,15 @@
 詳細は [LICENSE.md](LICENSE.md) をご覧ください。
 
 ## 使い方
-+ git clone
-+ bundle install
-+ rails db:migrate
-+ rails test
+```
+git clone
+```
+```
+bundle install
+```
+```
+rails db:migrate
+```
+```
+rails test
+```
