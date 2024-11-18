@@ -8,7 +8,6 @@ RUN apt update -qq \
     && npm install --global yarn
 RUN yarn add @fortawesome/fontawesome-free @fortawesome/fontawesome-svg-core @fortawesome/free-brands-svg-icons @fortawesome/free-regular-svg-icons @fortawesome/free-solid-svg-icons
 WORKDIR $APP
-COPY Gemfile $APP/Gemfile
-COPY Gemfile.lock $APP/Gemfile.lock
+COPY ./* $APP/
 RUN bundle install
-ADD . $APP
+ADD ./* $APP/
