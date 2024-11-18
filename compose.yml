@@ -1,0 +1,10 @@
+services:
+  rails:
+    build: .
+    command: rails s -p 3005 -b '0.0.0.0'
+    volumes:
+      - type: bind
+        source: .
+        target: /sample_app
+    ports:
+      - "3005:3005"
